@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body style="font-family: Verdana">
+
+
+<h1>Albums</h1>
+
+<ul>
+    <li th:each="a : ${albumsLijst}" >
+        <a th:href="@{/{id}(id=${a.id})}" th:text="${a.naam}"></a>
+    </li>
+</ul>
+
+
+
+
+
+
+</body>
+</html>
