@@ -9,6 +9,11 @@
 
 <h1 th:text="${album.naam}"></h1>
 
+<ul>
+    <li th:each="t : ${tracks}">
+        <span th:text="|${t.naam}  ${t.tijd}|"></span>
+    </li>
+</ul>
 
 
 

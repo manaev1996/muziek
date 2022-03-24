@@ -1,12 +1,11 @@
 package be.vdab.muziek.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalTime;
 
 @Entity
-@Table(name = "labels")
+@Table(name = "tracks")
+
 public class Tracks {
     @Id
     long albumId;

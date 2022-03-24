@@ -19,6 +19,7 @@ class JpaTrackRepository implements TrackRepository{
         return manager.createQuery("select t from Tracks t where t.albumId = :albumId", Tracks.class)
                 .setParameter("albumId", albumId)
                 .getResultList();
+
     }
 }
 
